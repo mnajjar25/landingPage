@@ -1,0 +1,19 @@
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="/">Landing Page</a>
+    </div>
+    <div class="nav-links" [class.active]="isMenuOpen">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#owners">Owners</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="hamburger" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+</header>

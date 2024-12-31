@@ -1,0 +1,89 @@
+.services-section {
+  background: linear-gradient(90deg, #003366, #0066cc);
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.services-section h1 {
+  font-size: 2.5rem;
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+.services-section p {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  color: #f0f4f8;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.service-card {
+  background: #f0f4f8;
+  color: #003366;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.service-card .icon {
+  font-size: 3rem;
+  color: #0066cc;
+  margin-bottom: 15px;
+}
+
+.service-card h2 {
+  font-size: 1.5rem;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #003366;
+}
+
+@media screen and (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .services-section h1 {
+    font-size: 2rem;
+  }
+
+  .services-section p {
+    font-size: 0.9rem;
+  }
+
+  .service-card h2 {
+    font-size: 1.3rem;
+  }
+
+  .service-card p {
+    font-size: 0.8rem;
+  }
+}

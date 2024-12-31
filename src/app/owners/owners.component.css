@@ -1,0 +1,91 @@
+.founders-section {
+  background: linear-gradient(90deg, #003366, #0066cc);
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.founders-section h1 {
+  font-size: 2.5rem;
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+.founders-section p {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  color: #f0f4f8;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.founders-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.founder-card {
+  background: #f0f4f8;
+  color: #003366;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.founder-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.founder-card .content {
+  padding: 20px;
+}
+
+.founder-card h2 {
+  font-size: 1.5rem;
+  color: #0066cc;
+  margin-bottom: 5px;
+}
+
+.founder-card h3 {
+  font-size: 1.2rem;
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+.founder-card p {
+  font-size: 1rem;
+  color: #003366;
+}
+
+@media screen and (max-width: 1024px) {
+  .founders-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .founder-card h2 {
+    font-size: 1.3rem;
+  }
+
+  .founder-card h3 {
+    font-size: 1rem;
+  }
+
+  .founder-card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .founders-grid {
+    grid-template-columns: 1fr;
+  }
+}

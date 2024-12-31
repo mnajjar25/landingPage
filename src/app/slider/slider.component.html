@@ -1,0 +1,15 @@
+<div class="slider">
+  <div class="slides" [style.transform]="'translateX(-' + currentSlideIndex * 100 + '%)'">
+    <div class="slide" *ngFor="let slide of slides; let i = index" [class.active]="i === currentSlideIndex">
+      <img [src]="slide.imageUrl" [alt]="slide.title" />
+      <div class="caption">
+        <h2>{{ slide.title }}</h2>
+        <p>{{ slide.description }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="navigation">
+    <button class="nav-btn prev" (click)="prevSlide()">&lt;</button>
+    <button class="nav-btn next" (click)="nextSlide()">&gt;</button>
+  </div>
+</div>

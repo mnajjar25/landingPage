@@ -1,0 +1,15 @@
+<div class="founders-section">
+  <div class="container">
+    <h1>Meet Our Founders</h1>
+    <p>The visionaries behind our success and innovation in IT solutions.</p>
+    <div class="founders-grid">
+      <div class="founder-card" *ngFor="let founder of founders">
+        <div class="content">
+          <h2>{{ founder.name }}</h2>
+          <h3>{{ founder.position }}</h3>
+          <p>{{ founder.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
